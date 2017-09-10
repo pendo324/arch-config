@@ -14,14 +14,22 @@ compinit
 
 source /usr/share/zsh/share/antigen.zsh
 
+export NVM_LAZY_LOAD=true
 antigen use oh-my-zsh
 
-export NVM_LAZY_LOAD=true
-antigen bundle lukechilds/zsh-nvm
+#export _ANTIGEN_CACHE_ENABLED=false
 
 antigen bundle git   
 antigen bundle heroku
 antigen bundle pip   
 antigen bundle command-not-found
-antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-syntax-highlighting]
+
+# node stuff
+antigen bundle lukechilds/zsh-nvm
+antigen bundle npm
+antigen bundle node
+
 antigen theme ys
+
+antigen apply
